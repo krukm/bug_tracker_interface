@@ -3,31 +3,6 @@
     padding: 0;
 }
 
-body {
- position: relative;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-a {
-    padding: 0.5em;
-    color: gray;
-    border-right: 1px solid grey;
-    text-decoration: none;
-}
-
-nav a:last-child {
-    border: 0;
-}
-
-.active , a:hover {
-    background-color: grey;
-    color: white;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -48,6 +23,10 @@ form {
 
 .bug_view {
     width: 30%;
+}
+
+.top_priority_bug {
+    padding: 5em;
 }
 
 button {

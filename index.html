@@ -8,18 +8,22 @@
     <title>Bug Reporter</title>
 </head>
 <body>
-    <nav class="nav">
-        <a href="index.html" class="active">Submit A Bug</a>
-        <a href="squash.html">Squash a Bug</a>
-    </nav>
     <section class="container">
         <h1>Bugs Everywhere!!!</h1>
         <p>This is the place to submit the bugs you have found:</p>
         <form>
-            <textarea rows="20" cols="70" placeholder="What is the bug? Steps to reproduce?"></textarea>
-            <button type="button">Submit</button>
+            <textarea id="description" rows="20" cols="70" placeholder="What is the bug? Steps to reproduce?"></textarea>
+            <button id="submit" type="button">Submit</button>
         </form>
     </section>
+    <section class="container">
+            <h1>Developers</h1>
+            <p>please fix these bugs the order they are presented:</p>
+            <section class="bug_view">
+                <button id="complete" type="button">Complete</button>
+            </section>
+        </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
